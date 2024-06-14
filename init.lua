@@ -1,0 +1,7 @@
+require("basic")
+require("plugin")
+require("theme")
+require("plugins-config.nvim-tree")
+require('plugins-config.bufferline')
+require('plugins-config.lualine')
+require("keybinding")
