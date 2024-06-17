@@ -6,10 +6,18 @@ vim.wo.cursorline = true
 -- 显示左侧图标指示列
 vim.wo.signcolumn = "yes"
 -- 缩进字符
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
+vim.o.tabstop = 4        -- 设置一个制表符的显示宽度为4个空格
+vim.o.softtabstop = 4    -- 设置插入模式下按Tab键时的插入空格数
+vim.o.shiftwidth = 4     -- 设置自动缩进时使用4个空格宽度
+vim.o.expandtab = true   -- 将制表符转换为空格
+vim.o.shiftround = true  -- 缩进对齐到 shiftwidth
+
+-- 设置缓冲区本地选项
 vim.bo.tabstop = 4
-vim.o.shiftround = true
+vim.bo.softtabstop = 4
+vim.bo.shiftwidth = 4
+vim.bo.expandtab = true
+
 -- 搜索大小写不敏感，除非包含大写
 vim.o.ignorecase = true
 vim.o.smartcase = true
